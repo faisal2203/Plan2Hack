@@ -1,0 +1,94 @@
+/*.footer-section{
+    margin-top: 10px !important;
+    z-index: 10;
+}
+*/
+
+#footer-section {
+    margin-top: 10rem;
+    height: 25vh;
+    background-color: black;
+    padding-bottom: 20px;
+  }
+  
+  #footer-section h3 {
+    font-size: 1.3rem;
+    color: white;
+    padding-top: 2rem;
+    text-align: center;
+  }
+  #footer-section h5 {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    padding-top: 2rem;
+    text-align: center;
+  }
+  
+#footer-section p{
+    color: white;
+    text-align: center;
+    padding-top: 4%;
+  }
+
+  #contact {
+    padding-top: 3rem;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  
+
+.icons-footer {
+    /*padding-top: 15px;*/
+    padding-left: 5px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .icons-footer a {
+    display: inline-block;
+    font-size: 20px;
+    color: #ffffff;
+    margin-right: 10px;
+    margin-left: 3px;
+  }
+  
+  .icons-footer a:hover {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  
+#mail:link {
+    color: rgb(153, 21, 157);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  
+  #mail:hover {
+    color: rgb(156, 11, 86);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+#team-href:link{
+  color: #61b187;
+}
+
+#team-href{
+  color: #61b187;
+}
+
+/* tablets */
+@media  (max-width: 1000px ) {
+
+}
+
+/* mobile-phones */
+@media  (max-width: 500px ) {
+
+    .footer-section{
+        margin-top: 10rem;
+    }
+}

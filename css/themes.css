@@ -1,0 +1,493 @@
+/*themes section and cards*/ 
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.themes-section {
+    height: 100vh;
+    /*margin-top: 150px;*/
+    background: -webkit-linear-gradient(to bottom right, #20948B, #6AB187);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom right, #20948B, #6AB187); 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.35rem;
+    text-align: center;
+    padding-top: 4.5%;
+  }
+  
+  #themes {
+    padding-top: 70px;
+  }
+  
+  .card {
+    background: #eeeeee;
+    box-shadow: 1px 1px 25px 0 rgba(0, 0, 0, 0.05);
+    transition: all .4s ease-in-out;
+    border-radius: 5%;
+    margin: 20px;
+  }
+  
+  .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 1px 1px 25px 0 rgba(0,0,0,0.9);
+    border-radius: 5%;
+  } 
+  
+  
+  .section {
+    min-height: 75vh;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+  }
+  
+  
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+    margin-top: 12%;
+    padding: 30px;
+  }
+  
+  /* display 3 */
+  @media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+     
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+  }
+  
+  .carousel-inner .carousel-item-right,
+  .carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+  }
+  
+  /*themes header line*/
+  .themes-section h1 {
+    margin: center;
+    color: #fff;
+    font-family: Poppins;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    margin-bottom: 10px;
+  }
+  
+
+  
+.accordian {
+	width: 1290px; height: 320px;
+	overflow: hidden;
+	
+	/*Time for some styling*/
+	margin: 100px auto;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+/*A small hack to prevent flickering on some browsers*/
+.accordian ul {
+	width: 2000px;
+	/*This will give ample space to the last item to move
+	instead of falling down/flickering during hovers.*/
+}
+
+.accordian li {
+	position: relative;
+	display: block;
+	width: 143px;
+	float: left;
+	
+	border-left: 1px solid #888;
+	
+	box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	
+	/*Transitions to give animation effect*/
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	/*If you hover on the images now you should be able to 
+	see the basic accordian*/
+}
+
+/*Reduce with of un-hovered elements*/
+.accordian ul:hover li {width: 80px;}
+/*Lets apply hover effects now*/
+/*The LI hover style should override the UL hover style*/
+.accordian ul li:hover {width: 640px;}
+
+
+.accordian li img {
+	display: block;
+}
+
+/*Image title styles*/
+.image_title {
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: 0; top: 0;	
+  width: 640px;	
+  height: 13%;
+
+}
+.image_title a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+	font-size: 16px;
+}
+
+@media screen and (max-width: 1025px) {
+    .accordian {
+      width: 850px; height: 320px;
+      overflow: hidden;
+      background-color: -webkit-linear-gradient(to bottom right, #050e3b, #33032f);
+      
+      /*Time for some styling*/
+      margin: 100px auto;
+      box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+      -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+      -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    }
+    
+    /*A small hack to prevent flickering on some browsers*/
+    .accordian ul {
+      width: 2000px;
+      /*This will give ample space to the last item to move
+      instead of falling down/flickering during hovers.*/
+    }
+    
+    h1[id="timeline"] {
+      font-weight: bold;
+      font-family: Poppins;
+      text-align: center;
+      margin-top: 10%;
+    }
+    
+    .accordian li {
+      position: relative;
+      display: block;
+      width: 100px;
+      float: left;
+      
+      border-left: 1px solid #888;
+      
+      box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+      
+      /*Transitions to give animation effect*/
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      /*If you hover on the images now you should be able to 
+      see the basic accordian*/
+    }
+    
+    /*Reduce with of un-hovered elements*/
+    .accordian ul:hover li {width: 0px;}
+    /*Lets apply hover effects now*/
+    /*The LI hover style should override the UL hover style*/
+    .accordian ul li:hover {width: 640px;}
+    
+    
+    .accordian li img {
+      display: block;
+      width: 640px;
+    }
+    
+    /*Image title styles*/
+    .image_title {
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      left: 0; top: 0;	
+      width: 640px;	
+      height: 13%;
+    
+    }
+    .image_title a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 7px 5px;
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .accordian {
+        width: 640px; height: 320px;
+        overflow: hidden;
+        background-color: -webkit-linear-gradient(to bottom right, #050e3b, #33032f);;
+        
+
+        /*Time for some styling*/
+        margin: 100px auto;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+      }
+      
+      /*A small hack to prevent flickering on some browsers*/
+      .accordian ul {
+        width: 2000px;
+        /*This will give ample space to the last item to move
+        instead of falling down/flickering during hovers.*/
+      }
+      
+      h1[id="timeline"] {
+        font-weight: bold;
+        font-family: Poppins;
+        text-align: center;
+        margin-top: 10%;
+      }
+      
+      .accordian li {
+        position: relative;
+        display: block;
+        width: 75px;
+        float: left;
+        
+        border-left: 1px solid #888;
+        
+        box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+        
+        /*Transitions to give animation effect*/
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        /*If you hover on the images now you should be able to 
+        see the basic accordian*/
+      }
+      
+      /*Reduce with of un-hovered elements*/
+      .accordian ul:hover li {width: 0px;}
+      /*Lets apply hover effects now*/
+      /*The LI hover style should override the UL hover style*/
+      .accordian ul li:hover {width: 640px;}
+      
+      
+      .accordian li img {
+        display: block;
+        width: 640px;
+      }
+      
+      /*Image title styles*/
+      .image_title {
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        left: 0; top: 0;	
+        width: 640px;	
+        height: 13%;
+      
+      }
+      .image_title a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 16px;
+      }
+      
+      #freepik {
+        text-align: center;
+        display: block;
+      }
+    
+    }
+    
+    #register {
+      margin-top: 10px;
+    }
+    
+    @media screen and (max-width: 415px) {
+      .themes-section{
+        height: 85vh;
+      }
+      .accordian {
+        width: 640px; height: 210px;
+        overflow: hidden;
+        background-color: -webkit-linear-gradient(to bottom right, #050e3b, #33032f);
+        margin-left: -12% !important;
+
+        /*Time for some styling*/
+        margin: 100px auto;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+      }
+      
+      /*A small hack to prevent flickering on some browsers*/
+      .accordian ul {
+        width: 2000px;
+        /*This will give ample space to the last item to move
+        instead of falling down/flickering during hovers.*/
+      }
+      
+      h1[id="timeline"] {
+        font-weight: bold;
+        font-family: Poppins;
+        text-align: center;
+        margin-top: 10%;
+      }
+      
+      .accordian li {
+        position: relative;
+        display: block;
+        width: 50px;
+        float: left;
+        
+        border-left: 1px solid #888;
+        
+        box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+        
+        /*Transitions to give animation effect*/
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        /*If you hover on the images now you should be able to 
+        see the basic accordian*/
+      }
+      
+      /*Reduce with of un-hovered elements*/
+      .accordian ul:hover li {width: 0px;}
+      /*Lets apply hover effects now*/
+      /*The LI hover style should override the UL hover style*/
+      .accordian ul li:hover {width: 414px;}
+      
+      
+      .accordian li img {
+        display: block;
+        width: 414px;
+      }
+      
+      /*Image title styles*/
+      .image_title {
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        left: 0; top: 0;	
+        width: 640px;	
+        height: 13%;
+      
+      }
+      .image_title a {
+        display: block;
+        color: #fff !;
+        text-decoration: none;
+        padding: 4px 10px;
+        font-size: 13.5px;
+      }
+    }
+    
+    @media screen and (max-width: 376px) {
+      .accordian {
+        width: 640px; height: 180px;
+        overflow: hidden;
+        background-color: -webkit-linear-gradient(to bottom right, #050e3b, #33032f);
+        margin-left: -6% !important;
+
+        /*Time for some styling*/
+        margin: 100px auto;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+      }
+      
+      /*A small hack to prevent flickering on some browsers*/
+      .accordian ul {
+        width: 2000px;
+        /*This will give ample space to the last item to move
+        instead of falling down/flickering during hovers.*/
+      }
+      
+      h1[id="timeline"] {
+        font-weight: bold;
+        font-family: Poppins;
+        text-align: center;
+        margin-top: 10%;
+      }
+      
+      .accordian li {
+        position: relative;
+        display: block;
+        width: 45px;
+        float: left;
+        
+        border-left: 1px solid #888;
+        
+        box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+        
+        /*Transitions to give animation effect*/
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        /*If you hover on the images now you should be able to 
+        see the basic accordian*/
+      }
+      
+      /*Reduce with of un-hovered elements*/
+      .accordian ul:hover li {width: 0px;}
+      /*Lets apply hover effects now*/
+      /*The LI hover style should override the UL hover style*/
+      .accordian ul li:hover {width: 360px;}
+      
+      
+      .accordian li img {
+        display: block;
+        width: 360px;
+      }
+      
+      /*Image title styles*/
+      .image_title {
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        left: 0; top: 0;	
+        width: 640px;	
+        height: 13%;
+      
+      }
+
+
+      .image_title a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 4px 5px;
+        font-size: 12px;
+        margin-right: 40%;
+      }
+  }

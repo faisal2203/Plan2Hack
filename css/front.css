@@ -1,0 +1,292 @@
+/* ---- particles.js container ---- */
+#particles-js {
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    /* background-color: #3f5efb; */
+    /* background-color: #fc466b; */
+    /* background-image: url("http://hackjnu.in/images/pinkbluebg.jpg"); */
+    /*background-image: url("./assets/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;*/
+    background: #a8c0ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom right, #20948B, #6ab187);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom right, #20948B, #6AB187); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  } 
+
+  
+.plan2hack {
+    position: absolute;
+    z-index: 2;
+    font-size: 1.5rem;
+    padding: 25px;
+    left: 10%;
+    top: 18%;
+  }
+  
+  .plan2hack h1 {
+    font-family: Poppins;
+    margin-bottom: 2%;
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+  }
+  
+  .plan2hack h3 {
+    font-family: Poppins;
+    padding-bottom: 5px;
+    color: white;
+  }
+  
+  .plan2hack h5 {
+    font-family: Poppins;
+    color: white;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+  
+  .illustration {
+    position: relative;
+    z-index: 0;
+  }
+  
+  .plan2hack-img {
+    height: auto;
+    width: 30%;
+    position: absolute;
+    top: 90px;
+    right: 8%;
+    z-index: 0;
+  }
+  
+.icons {
+    padding: 15px;
+    padding-left: 0px;
+    margin-top: 10px;
+  }
+  
+  .icons a {
+    display: inline-block;
+    font-size: 20px;
+    color: #ffffff;
+    margin-right: 10px;
+  }
+  
+  .icons a:hover {
+    color: rgba(255, 255, 255, 0.85);
+  }
+  
+  
+#rulebook {
+    background-color: transparent;
+    border-radius: 30px;
+    font-family: Poppins;
+    padding: 10px 18px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 1px solid white;
+  }
+  
+  #rulebook:hover {
+    background-color: #de7a22;
+    border-color:#de7a22;
+  }
+  
+  #register {
+    background-color: #de7a22;
+    border-radius: 30px;
+    font-family: Poppins;
+    padding: 10px 16px;
+    transition: 0.5s;
+    border: none;
+  }
+  
+#register {
+    margin-top: 10px;
+  }
+  
+  #register:hover {
+    background-color: #de7a22;
+  }
+
+  .highlights {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 45%;
+  }
+  
+  .highlights h1 {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+  
+  .highlights h3 {
+    padding: 25px;
+    font-family: Poppins;
+  } 
+  
+
+  #countdown {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  } 
+  
+  .countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    margin-bottom: 30px;
+  }
+  
+  .countdown li {
+    background:#de7a22;
+    margin: 10px;
+    display: inline-block;
+    font-size: 25px;
+    list-style-type: none;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 20px;
+  }
+  
+  .countdown li span {
+    display: block;
+    font-size: 40px;
+  }
+
+  
+.video {
+    height: 35%;
+    width: 40%;
+    position: absolute;
+    top: 22%;
+    right: 8%;
+    z-index: 0;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .main-nav {
+      position: relative;
+      background: linear-gradient(to bottom right, #050e3b, #33032f);
+      padding: 20px 0;
+      transform: scaleY(0) rotateX(-90deg);
+      transition: transform .3s cubic-bezier(0,1.84,.88,.78);
+      transform-origin: top;
+    }
+  
+    
+    .icons {
+        padding: 15px;
+        padding-left: 0px;
+        margin-top: 10px;
+    }
+
+    .hero-section {
+      height: 90vh;
+      position: relative;
+    }
+  
+    .plan2hack {
+      position: absolute;
+      z-index: 2;
+      font-size: 1.2rem;
+      padding: 2px;
+      left: 5%;
+      top: 60%;
+      transform: translateY(-50%);
+    }
+  
+    .plan2hack h1 {
+      font-family: Poppins;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+  
+    .plan2hack h3 {
+      font-family: Poppins;
+      padding-bottom: 5px;
+      color: #fff;
+    }
+  
+    .plan2hack h5 {
+      font-size: 18px;
+      font-family: Poppins;
+      color: #fff;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+  
+    .illustration {
+      position: relative;
+      z-index: 0;
+      display: none;
+    }
+  
+    .plan2hack-img {
+      width: 30px;
+      position: absolute;
+      top: 35px;
+      left: 5%;
+      z-index: 0;
+    }
+
+    
+  .highlights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0%;
+    margin-right: 25%;
+  }
+
+  .highlights h1 {
+    padding: 25px;
+    font-size: 32px;
+    font-family: Poppins;
+    text-align: center;
+  }
+
+
+  
+  #countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 10px;
+    margin-left: 3%;
+  }
+
+  #countdown li {
+   display: inline-block;
+    font-size: 12px;
+    list-style-type: none;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  #countdown li span {
+    display: block;
+    font-size: 30px;
+  }
+}  
+
+
+
+@media screen and (max-width: 950px) {
+    .video {
+      display: none;
+    }
+  }
